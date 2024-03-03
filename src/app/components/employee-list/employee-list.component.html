@@ -23,7 +23,7 @@
           <td>{{ item.address }}</td>
           <td>{{ item.salary }}</td>
           <td><button class="btn btn-warning btn-sm" [routerLink]="['/employees/edit/', item.id]">Edit</button></td>
-          <td><button class="btn btn-danger btn-sm">Delete</button></td>
+          <td><button class="btn btn-danger btn-sm" (click)="deleteEmployee(item.id)">Delete</button></td>
         </tr>
       </tbody>
     </table>
